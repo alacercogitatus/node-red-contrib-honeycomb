@@ -1,0 +1,30 @@
+{
+  "name": "node-red-contrib-honeycomb",
+  "version": "0.1.0",
+  "dependencies": {
+    "libhoney": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alacercogitatus/node-red-contrib-honeycomb.git"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "output",
+    "HTTP Collector",
+    "node-red",
+    "HEC",
+    "Machine",
+    "Machine Data",
+    "Analytics",
+    "Machine Learning",
+    "Honeycomb",
+    "cereal"
+  ],
+
+  "node-red" : {
+    "nodes": {
+      "honeycomb-collector": "honeycomb-collector/honeycomb-collector.js"
+    }
+  }
+}

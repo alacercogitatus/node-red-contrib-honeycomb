@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('honeycomb-collector',{
+        category: 'output',
+        color: '#009D2F',
+        defaults: {
+            name: {value:"honeycomb-name"},
+            dataset: {value:"", required:true},
+            writeKey: {value:"", required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "honeycomb.png",
+        label: function() {
+            return this.name||"honeycomb-collector";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="honeycomb-collector">
+<div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-dataset"><i class="fa fa-globe"></i> Dataset</label>
+        <input type="text" id="node-input-dataset" placeholder="nodered">
+    </div>
+    <div class="form-row">
+        <label for="node-input-writeKey"><i class="fa fa-globe"></i> writeKey</label>
+        <input type="text" id="node-input-writeKey" placeholder="WriteKey">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="honeycomb-collector">
+	<blockquote>Help Me.</blockquote>
+</script>
