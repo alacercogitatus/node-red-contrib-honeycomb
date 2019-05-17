@@ -11,26 +11,13 @@ Wanted to make an easy avenue to publish data into Honeycomb through Node-Red.
 ## Installation
 
 The easiest way to install is through the Node-Red Palette Manager that can be found in the menu on the top right hand corner of the Node-Red ui.
+Maybe. Not sure. 
 
-### Manual install with npm
-
-```sh
-npm install -g node-red-contrib-honeycomb
-```
-### Install from source
-From github:
-Navigate to the your home directory on linux is is ~/.node-red/node-modules
-```sh
-git clone https://github.com/alacercogitatus/node-red-contrib-honeycomb.git
-```
-```sh
-cd node-red-contrib-honeycomb
-npm install
-```
+Or just clone into `$NODE_RED_HOME/node_modules`.
 
 ## Setup
 
-[Example Node-RED configuration](https://i.imgur.com/9noXzGI.png)
+Add Dataset and writeKey into the node configuration. Send "msg.payload". Profit. Or don't. Your life.
 
 
 ## Examples:
